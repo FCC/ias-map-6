@@ -38,9 +38,9 @@ L.mapbox.tileLayer('fcc.486nremf', {
 
 // basemap layer controls
 L.control.layers({
-    'Street Map': L.mapbox.tileLayer('fcc.k74ed5ge').addTo(map),
-    'Satellite Map': L.mapbox.tileLayer('fcc.k74d7n0g'),
-    'Terrain Map': L.mapbox.tileLayer('fcc.k74cm3ol')
+    'Street Map': L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10').addTo(map),
+    'Satellite Map': L.mapbox.styleLayer('mapbox://styles/mapbox/satellite-streets-v11'),
+    'Terrain Map': L.mapbox.styleLayer('mapbox://styles/mapbox/satellite-v9')
 	}, null, {position: 'topleft'}).addTo(map);
 
 </script>
